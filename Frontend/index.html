@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/assets/css/app.css">
+    
+    <title>Quản Lý Mượn Sách</title>
+    <link rel="shortcut icon" href="./src/assets/img/logo.png">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <style>
+        #af-preloader{width:100%;height:100%;position:fixed;background-color:#fff;z-index:99999999;top:0;left:0}
+
+        .af-preloader-wrap{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+
+        .af-sp{width:42px;height:42px;clear:both;margin:20px auto}
+
+        .af-sp-wave{border-radius:50%;position:relative;opacity:1}
+
+        .af-sp-wave:before,.af-sp-wave:after{content:'';border:2px #33b5e5 solid;border-radius:50%;width:100%;height:100%;position:absolute;left:0}
+
+        .af-sp-wave:before{transform:scale(1,1);opacity:1;-webkit-animation:spWaveBe .6s infinite linear;animation:spWaveBe .6s infinite linear}
+
+        .af-sp-wave:after{transform:scale(0,0);opacity:0;-webkit-animation:spWaveAf .6s infinite linear;animation:spWaveAf .6s infinite linear}
+        #topBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: #555;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+    
+        #topBtn:hover {
+          background-color: #333;
+        }
+      </style>
+  </head>   
+    
+</html>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+    <script src="./src/assets/js/bootstrap.min.js"></script>
+    
+    <!-- custom css and js file link  -->
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <script src="./src/assets/js/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+    <div id='af-preloader'>
+      <div class='af-preloader-wrap'>
+        <div class='af-sp af-sp-wave'></div>
+      </div>
+    </div>
+    <script>
+      $(window).on('load', function () { $('#af-preloader').delay(500).fadeOut('slow') })
+    </script>
+    <div id="app"></div>
+    <button class="shake-little" onclick="topFunction()" id="myBtn" title="Go to top" style="display:none">Top</button>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Preloader
+      window.addEventListener('load', function () {
+        AOS.init();
+      });
+      
+      
+
+    // Get the button
+          let mybutton = document.getElementById("myBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {scrollFunction()};
+
+          function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+      } else {
+            mybutton.style.display = "none";
+      }
+    }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+    }
+      
+    </script>
+
+    
+    
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/assets/js/script.js"></script>
+  </body>
+</html>
